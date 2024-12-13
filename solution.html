@@ -1,0 +1,7 @@
+The issue was resolved by adding !important to the problematic class or by inspecting the CSS hierarchy to identify a more specific CSS rule overriding the Tailwind class.  For example:
+
+```html
+<div class="bg-red-500 !important">This div should now have a red background</div>
+```
+
+Alternatively, make sure there are no other conflicting CSS rules that override Tailwind's default styles with higher specificity. You can use your browser's developer tools to inspect the element and see which CSS rules are applied, and adjust their order or specificity as needed.
